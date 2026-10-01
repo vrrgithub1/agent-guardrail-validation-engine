@@ -25,6 +25,19 @@ flowchart TD
     GATE -.->|Audit Event| DV["Governance Data Vault 2.0<br/>(HUB_SECURITY_INVOCATION)"]:::vault
     EVAL -.->|Evaluation Event| DV
 ```
+## 📸 Interactive Security Dashboard (Streamlit)
+🟢 **Approved Scenario: PII Anonymization & Audit Trail**
+
+| Tab 1: AST Threat Inspector | Tab 2: PII Anonymization Output | Tab 3: Data Vault 2.0 Audit Entry |
+| --- | --- | --- |
+| ![Safe request: AST Threat Inspector](assets/SafeRequest_Tab1.png) | ![Safe request: PII Anonymization Output](assets/SafeRequest_Tab2.png) | ![Safe request: Data Vault 2.0 Audit Entry](assets/SafeRequest_Tab3.png) |
+
+🔴 **Rejected Scenario: Adversarial Prompt Injection**
+
+| Tab 1: AST Threat Inspector | Tab 2: Blocked Context | Tab 3: Data Vault 2.0 Audit Entry |
+| --- | --- | --- |
+| ![Prompt injection: AST Threat Inspector](assets/PromptInjectionAttack_Tab1.png) | ![Prompt injection: Blocked Context](assets/PromptInjectionAttack_Tab2.png) | ![Prompt injection: Data Vault 2.0 Audit Entry](assets/PromptInjectionAttack_Tab3.png) |
+
 
 ## 🔑 Key Features & System Modules
 ### 1. Real-Time Input Security Gate (`guardrails/`)
